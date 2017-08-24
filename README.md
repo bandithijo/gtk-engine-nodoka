@@ -1,7 +1,6 @@
 # gtk-engine-nodoka
 
-Default gtk engine provided by Fedora 8
-Fedora Nodoka gtkrc, based on Aqualooks
+Default gtk engine provided by Fedora 8. Fedora Nodoka gtkrc, based on Aqualooks
 
 ## Authors
 1. Daniel Geiger
@@ -10,7 +9,7 @@ Fedora Nodoka gtkrc, based on Aqualooks
 Uses the `Nodoka` theme engine, forked from `Murrine` theme engine.
 
 ## Dependencies
-* gtk2
+* `gtk2`
 
 ## Location
 Libraries location :
