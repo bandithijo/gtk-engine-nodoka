@@ -11,7 +11,7 @@ gtk_color_scheme = "fg_color:#000000\nbg_color:#ECE9E9\nbase_color:#ffffff\ntext
 style "fedora-default"
 {
 
-	GtkButton::default_border	= { 0, 0, 0, 0 }
+	GtkButton::default_border	    = { 0, 0, 0, 0 }
 	GtkButton::child-displacement-x	= 0
 	GtkButton::child-displacement-y	= 0
 
@@ -25,38 +25,38 @@ style "fedora-default"
 	GtkPaned::handle_size		= 0
 
 	GtkScrollbar		::min-slider-length			= 50
-	GtkScrollbar		::slider-width					= 9
-	#GtkScrollbar		::activate-slider				= 1
+	GtkScrollbar		::slider-width				= 9
+	#GtkScrollbar		::activate-slider			= 1
 	GtkScrollbar		::trough-border				= 3
 	GtkScrollbar		::has-backward-stepper 		= 0
 	GtkScrollbar		::has-forward-stepper		= 0
 
 	GtkScrolledWindow	::scrollbar-spacing			= 0
 	GtkScrolledWindow	::scrollbars-within-bevel	= 1
-	
+
 	GtkCheckButton::indicator_size	= 13
   	GtkRadioButton::indicator_size	= 13
 	GtkMenuBar::internal-padding	= 0
-	GtkTreeView::expander_size	= 10
-	GtkExpander::expander_size	= 10
+	GtkTreeView::expander_size	    = 10
+	GtkExpander::expander_size	    = 10
 
 	xthickness			= 1
 	ythickness			= 1
 
-  	GtkTreeView::odd_row_color 	= shade (0.929458256, @base_color)
-	#GtkTreeView::even_row_color 	= @base_color
+  	GtkTreeView::odd_row_color 	  = shade (0.929458256, @base_color)
+	# GtkTreeView::even_row_color = @base_color
 
 	fg[NORMAL]				= @fg_color
 	fg[PRELIGHT]			= @fg_color
 	fg[ACTIVE]				= @fg_color
 	fg[SELECTED]			= @selected_fg_color
-	fg[INSENSITIVE]		= shade (0.7019, @selected_fg_color)
+	fg[INSENSITIVE]		    = shade (0.7019, @selected_fg_color)
 
 	bg[NORMAL]				= @bg_color
 	bg[PRELIGHT]			= shade (1.0346, @bg_color)
 	bg[ACTIVE]				= shade (0.9437, @bg_color)
 	bg[SELECTED]			= @selected_bg_color
-	bg[INSENSITIVE]		= shade (0.9437, @bg_color)
+	bg[INSENSITIVE]		    = shade (0.9437, @bg_color)
 
 	base[NORMAL]			= @base_color
 	base[PRELIGHT]			= shade (0.3967, @base_color)
@@ -73,20 +73,20 @@ style "fedora-default"
 	engine "nodoka"
 	{
 		scrollbar_color		= shade (1.040897799, "#E5E1E1")
-		animation		= TRUE # FALSE = disabled, TRUE = enabled
-#		contrast		= 1.0
-#		gradients		= FALSE
-#		hilight_ratio		= 0.909090909
+		animation		    = TRUE # FALSE = disabled, TRUE = enabled
+		# contrast		    = 1.0
+		# gradients		    = FALSE
+		# hilight_ratio		= 0.909090909
 		listviewheaderstyle	= 1 # 0 = flat, 1 = gradient, 2 = raised
 		listviewstyle		= 1 # 0 = nothing, 1 = dotted
 		menubarstyle		= 3 # 0 = flat, 1 = normal raised gradient, 2 = normal lowered gradient, 3 = menubar gradient
 		toolbarstyle		= 2 # 0 = flat, 1 = normal raised gradient, 2 = normal lowered gradient, 3 = menubar gradient
-		roundness		= 3 # 0 = squared, 1 = old default, more will increase roundness
+		roundness		    = 3 # 0 = squared, 1 = old default, more will increase roundness
 		scrollbarstyle		= 1 # 0 = nothing, 1 = circles, 2 = bars
-		stripes			= TRUE # enable or disable stripes in progressbars
+		stripes			    = TRUE # enable or disable stripes in progressbars
 		bullet_color		= "#005DC2"
-		focus_fill		= TRUE # enable or disable focus overlay fill
-		focus_inner		= FALSE	# TRUE = secondary focus ring inside, FALSE = secondary focus ring outside widgets
+		focus_fill		    = TRUE # enable or disable focus overlay fill
+		focus_inner		    = FALSE	# TRUE = secondary focus ring inside, FALSE = secondary focus ring outside widgets
 	}
 
 }
@@ -221,22 +221,22 @@ style "fedora-scrollbar" = "fedora-button"
 	GtkScrollbar::stepper-size		= 0
 	GtkScrollbar::arrow-scaling	= 0
 
-#	text[NORMAL]		= shade (0.2, @fg_color)
-#	text[PRELIGHT]		= shade (0.2, @fg_color)
-#	text[ACTIVE]		= @text_color
-	
+	# text[NORMAL]		= shade (0.2, @fg_color)
+	# text[PRELIGHT]	= shade (0.2, @fg_color)
+	# text[ACTIVE]		= @text_color
+
 	bg[NORMAL] 			= @scrollbar_bg_color
 	bg[PRELIGHT] 		= @scrollbar_bg_color
 	bg[ACTIVE] 			= @scrollbar_bg_color
-	
-	
+
+
 	engine "murrine"
 	{
 		colorize_scrollbar	= FALSE
-		roundness				= 10
-		border_shades			= {0.75, 0.75}
-		trough_shades			= {1.3, 1.2}
-		contrast					= 0.03
+		roundness			= 10
+		border_shades		= {0.75, 0.75}
+		trough_shades		= {1.3, 1.2}
+		contrast			= 0.03
 		gradient_shades		= {1.06,1.06,1.04,1.04}
 	}
 }
@@ -245,7 +245,7 @@ style "fedora-scale" = "fedora-button"
 {
 
 	GtkRange	::trough-side-details	= 0
-	GtkRange	::slider_width				= 16
+	GtkRange	::slider_width			= 16
 
 	bg[SELECTED]    	= shade (1.1, @selected_bg_color)
 	fg[PRELIGHT]		= shade(1.1946, @selected_fg_color)
@@ -287,7 +287,7 @@ widget_class "*.GtkCombo.GtkButton"	style "fedora-combo"
 widget_class "*.GtkComboBox.GtkFrame"	style "fedora-wider"
 
 # tooltips stuff
-widget "gtk-tooltip*"			style "fedora-tooltips"
+widget "gtk-tooltip*"	style "fedora-tooltips"
 
 # treeview stuff
 widget_class "*.GtkTreeView.GtkButton"	style "fedora-tree"
@@ -309,10 +309,10 @@ widget_class "*GtkCList*"	style "evolution-hack"
 widget_class "*.ETree.*"	style "evolution-hack"
 widget_class "*EInfoLabel*"	style "evolution-hack"
 
-#panel bg hack
+# panel bg hack
 widget "*Panel*Menu*"		style "fedora-panel-menubar"
 
-#evolution new button workaround (should be fixed in Evo 2.24)
+# evolution new button workaround (should be fixed in Evo 2.24)
 style "fedora-evo-new-button-workaround"
 {
 	engine "nodoka"
@@ -323,8 +323,18 @@ style "fedora-evo-new-button-workaround"
 
 widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "fedora-evo-new-button-workaround"
 
-
+# clock panel
 style "gtklabelbold"
 {
 font_name="bold 18"}
 widget_class "*XfcePanel*ClockPlugin*" style "gtklabelbold"
+
+# whisker menu
+style "nodoka"
+{
+    base[NORMAL] = "#ffffff"
+	base[ACTIVE] = "#008DD7"
+	text[NORMAL] = "#000000"
+	text[ACTIVE] = "#ffffff"
+}
+widget "whiskermenu-window*" style "nodoka"
