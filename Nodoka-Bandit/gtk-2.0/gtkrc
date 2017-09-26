@@ -92,10 +92,10 @@ style "fedora-default"
 }
 
 
-# Evolution (and some deprecated widgets) use bg and fg for its listview instead of 
+# Evolution (and some deprecated widgets) use bg and fg for its listview instead of
 # base and text like they should, so we override it.
 style "evolution-hack" = "fedora-default"
-{	
+{
 	bg[ACTIVE]		= @bg_color
 	bg[SELECTED]	= shade (1.040897799, @selected_bg_color)
 	fg[ACTIVE]		= @text_color
@@ -261,21 +261,21 @@ style "fedora-spin-button" = "fedora-entry"
 }
 
 # widget styles
-class "GtkWidget"	style "fedora-default"
-class "GtkButton"	style "fedora-button"
-class "GtkCombo"	style "fedora-combo"
-class "GtkRange"	style "fedora-wide-bright"
-class "GtkFrame"	style "fedora-wide"
-class "GtkMenu"		style "fedora-menu"
-class "GtkEntry"	style "fedora-entry"
-class "GtkMenuItem"	style "fedora-menu-item"
-class "GtkNotebook"	style "fedora-notebook"
+class "GtkWidget"	    style "fedora-default"
+class "GtkButton"	    style "fedora-button"
+class "GtkCombo"	    style "fedora-combo"
+class "GtkRange"	    style "fedora-wide-bright"
+class "GtkFrame"	    style "fedora-wide"
+class "GtkMenu"		    style "fedora-menu"
+class "GtkEntry"	    style "fedora-entry"
+class "GtkMenuItem"	    style "fedora-menu-item"
+class "GtkNotebook"	    style "fedora-notebook"
 class "GtkProgressBar"	style "fedora-progressbar"
-class "GtkMenuBar"	style "fedora-menubar"
+class "GtkMenuBar"	    style "fedora-menubar"
 class "GtkStatusbar"	style "fedora-status"
 class "GtkScrollbar"	style "fedora-scrollbar"
-class "GtkHBox"		style "fedora-wider"
-class "GtkScale"	style "fedora-scale"
+class "GtkHBox"		    style "fedora-wider"
+class "GtkScale"	    style "fedora-scale"
 class "GtkCheckButton"	style "fedora-checkbutton"
 class "GtkSpinButton"	style "fedora-spin-button"
 
@@ -283,7 +283,7 @@ widget_class "*MenuItem.*"		style "fedora-menu-item"
 
 # combobox stuff
 widget_class "*.GtkComboBox.GtkButton"	style "fedora-combo"
-widget_class "*.GtkCombo.GtkButton"	style "fedora-combo"
+widget_class "*.GtkCombo.GtkButton"	    style "fedora-combo"
 widget_class "*.GtkComboBox.GtkFrame"	style "fedora-wider"
 
 # tooltips stuff
@@ -291,14 +291,14 @@ widget "gtk-tooltip*"	style "fedora-tooltips"
 
 # treeview stuff
 widget_class "*.GtkTreeView.GtkButton"	style "fedora-tree"
-widget_class "*.GtkCTree.GtkButton"	style "fedora-tree"
-widget_class "*.GtkList.GtkButton"	style "fedora-tree"
-widget_class "*.GtkCList.GtkButton"	style "fedora-tree"
-widget_class "*.GtkFrame.GtkLabel"	style "fedora-frame-title"
+widget_class "*.GtkCTree.GtkButton"	    style "fedora-tree"
+widget_class "*.GtkList.GtkButton"	    style "fedora-tree"
+widget_class "*.GtkCList.GtkButton"	    style "fedora-tree"
+widget_class "*.GtkFrame.GtkLabel"	    style "fedora-frame-title"
 
 # notebook stuff
-widget_class "*.GtkNotebook.*.GtkEventBox"	style "fedora-notebook"
-widget_class "*.GtkNotebook.*.GtkViewport"	style "fedora-notebook"
+widget_class "*.GtkNotebook.*.GtkEventBox"	    style "fedora-notebook"
+widget_class "*.GtkNotebook.*.GtkViewport"	    style "fedora-notebook"
 widget_class "*<GtkNotebook>*<GtkDrawingArea>"  style "fedora-notebook"
 widget_class "*<GtkNotebook>*<GtkLayout>"       style "fedora-notebook"
 
@@ -326,15 +326,16 @@ widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" st
 # clock panel
 style "gtklabelbold"
 {
-font_name="bold 18"}
+font_name="bold 14"}
 widget_class "*XfcePanel*ClockPlugin*" style "gtklabelbold"
 
 # whisker menu
 style "nodoka"
 {
-    base[NORMAL] = "#ffffff"
-	base[ACTIVE] = "#008DD7"
-	text[NORMAL] = "#000000"
-	text[ACTIVE] = "#ffffff"
+   base[NORMAL]    = "#ffffff"
+	base[ACTIVE]    = "#008DD7"
+	text[NORMAL]    = "#000000"
+	text[ACTIVE]    = "#ffffff"
 }
 widget "whiskermenu-window*" style "nodoka"
+
