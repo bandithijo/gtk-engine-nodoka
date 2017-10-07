@@ -332,10 +332,24 @@ widget_class "*XfcePanel*ClockPlugin*" style "gtklabelbold"
 # whisker menu
 style "nodoka"
 {
-   base[NORMAL]    = "#ffffff"
+  base[NORMAL]    = "#ffffff"
 	base[ACTIVE]    = "#008DD7"
 	text[NORMAL]    = "#000000"
 	text[ACTIVE]    = "#ffffff"
 }
 widget "whiskermenu-window*" style "nodoka"
 
+# desktop icon
+style "xfdesktop-icon-view" {
+XfdesktopIconView::label-alpha = 0
+XfdesktopIconView::selected-label-alpha = 170
+
+base[NORMAL] = "#cccccc"
+base[SELECTED] = "#cccccc"
+base[ACTIVE] = "#cccccc"
+
+fg[NORMAL] = "#ffffff"
+fg[SELECTED] = "#000000"
+fg[ACTIVE] = "#000000"
+}
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
