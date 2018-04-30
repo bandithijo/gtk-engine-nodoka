@@ -2,6 +2,10 @@
 
 Default gtk engine provided by Fedora 8. Fedora Nodoka gtkrc, based on Aqualooks
 
+![gambar_01](/ScreenShot/window_01.png)
+
+![gambar_01](/ScreenShot/window_02.png)
+
 ## Authors
 1. Daniel Geiger
 2. Martin Sourada
