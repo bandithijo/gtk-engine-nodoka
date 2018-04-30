@@ -18,7 +18,7 @@ style "fedora-default"
 	GtkRange::trough_border		= 0
 	GtkRange::slider_width		= 10
 	GtkRange::stepper_size		= 1
-  	GtkRange::stepper_spacing	= 0
+        GtkRange::stepper_spacing	= 0
 
 	GtkScale::slider-length		= 28
 
@@ -35,7 +35,7 @@ style "fedora-default"
 	GtkScrolledWindow	::scrollbars-within-bevel	= 1
 
 	GtkCheckButton::indicator_size	= 13
-  	GtkRadioButton::indicator_size	= 13
+        GtkRadioButton::indicator_size	= 13
 	GtkMenuBar::internal-padding	= 0
 	GtkTreeView::expander_size	    = 10
 	GtkExpander::expander_size	    = 10
@@ -43,7 +43,7 @@ style "fedora-default"
 	xthickness			= 1
 	ythickness			= 1
 
-  	GtkTreeView::odd_row_color 	  = shade (0.929458256, @base_color)
+        GtkTreeView::odd_row_color 	  = shade (0.929458256, @base_color)
 	# GtkTreeView::even_row_color = @base_color
 
 	fg[NORMAL]				= @fg_color
@@ -133,15 +133,15 @@ style "fedora-wider-bright" = "fedora-wider"
 style "fedora-button" = "fedora-wider"
 {
 	bg[NORMAL]   =  shade (1.02,@bg_color)
- 	bg[ACTIVE]   =  shade (0.85,@bg_color)
+        bg[ACTIVE]   =  shade (0.85,@bg_color)
 	bg[PRELIGHT] =  mix(0.90, shade (1.05,@bg_color), @selected_bg_color)
 }
 
 style "fedora-notebook" = "fedora-wide-bright"
 {
 	bg[ACTIVE]   	= shade (0.80, @bg_color)
-  	bg[INSENSITIVE] = shade (0.9221, @bg_color)
-  	bg[NORMAL]      = shade (1.0346, @bg_color)
+        bg[INSENSITIVE] = shade (0.9221, @bg_color)
+        bg[NORMAL]      = shade (1.0346, @bg_color)
 	bg[PRELIGHT] 	= lighter (@bg_color)
 }
 
@@ -197,9 +197,9 @@ style "fedora-tooltips"
 
 style "fedora-progressbar" = "fedora-wide-bright"
 {
-  	bg[NORMAL]      = shade (0.80, @bg_color)
-  	bg[SELECTED]    = @selected_bg_color
-	fg[PRELIGHT]	= shade(1.1946, @selected_fg_color)
+        bg[NORMAL]      = shade (0.80, @bg_color)
+        bg[SELECTED]    = @selected_bg_color
+        fg[PRELIGHT]	= shade(1.1946, @selected_fg_color)
 }
 
 style "fedora-combo" = "fedora-button"
@@ -208,7 +208,7 @@ style "fedora-combo" = "fedora-button"
 
 style "fedora-status" = "fedora-wide"
 {
-	GtkStatusbar	::shadow-type	= GTK_SHADOW_IN
+        GtkStatusbar	::shadow-type	= GTK_SHADOW_IN
 }
 
 style "fedora-entry" = "fedora-button"
@@ -218,20 +218,20 @@ style "fedora-entry" = "fedora-button"
 style "fedora-scrollbar" = "fedora-button"
 {
 
-	GtkScrollbar::stepper-size		= 0
-	GtkScrollbar::arrow-scaling	= 0
+        GtkScrollbar::stepper-size		= 0
+        GtkScrollbar::arrow-scaling	= 0
 
-	# text[NORMAL]		= shade (0.2, @fg_color)
-	# text[PRELIGHT]	= shade (0.2, @fg_color)
-	# text[ACTIVE]		= @text_color
+        # text[NORMAL]		= shade (0.2, @fg_color)
+        # text[PRELIGHT]	= shade (0.2, @fg_color)
+        # text[ACTIVE]		= @text_color
 
-	bg[NORMAL] 			= @scrollbar_bg_color
-	bg[PRELIGHT] 		= @scrollbar_bg_color
-	bg[ACTIVE] 			= @scrollbar_bg_color
+        bg[NORMAL] 			= @scrollbar_bg_color
+        bg[PRELIGHT] 		= @scrollbar_bg_color
+        bg[ACTIVE] 			= @scrollbar_bg_color
 
 
-	engine "murrine"
-	{
+        engine "murrine"
+        {
 		colorize_scrollbar	= FALSE
 		roundness			= 10
 		border_shades		= {0.75, 0.75}
@@ -345,11 +345,11 @@ XfdesktopIconView::label-alpha = 0
 XfdesktopIconView::selected-label-alpha = 170
 
 base[NORMAL] = "#cccccc"
-base[SELECTED] = "#cccccc"
+base[SELECTED] = "#008DD7"
 base[ACTIVE] = "#cccccc"
 
-fg[NORMAL] = "#ffffff"
-fg[SELECTED] = "#000000"
-fg[ACTIVE] = "#000000"
+fg[NORMAL] = "#FFFFFF"
+fg[SELECTED] = "#FFFFFF"
+fg[ACTIVE] = "#FFFFFF"
 }
 widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
