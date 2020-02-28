@@ -1,0 +1,21 @@
+button_offset=4
+button_spacing=0
+full_width_title=true
+maximized_offset=4
+show_app_icon=true
+title_horizontal_offset=0
+title_shadow_active=false
+title_shadow_inactive=false
+title_vertical_offset_active=1
+title_vertical_offset_inactive=1
+
+# button_layout :
+#    O = Option menu
+#    T = Stick
+#    H = hide
+#    S = shade
+#    M = maximize
+#    C = close
+#    | = title
+#button_layout=O|SHMC
+
